@@ -1,0 +1,20 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50%;
+    align-items: flex-start;
+}
+#myForm input,#myForm button,button{
+    padding: 5px;
+}
+.main-btn{
+    width: 28%;
+    background-color: white;
+    font-family: arial black;
+}
+#myForm button{
+    font-family:verdana;
+    background-color: black;
+    color: white;
+}

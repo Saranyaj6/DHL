@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript.css">
+    <title>dynamic array</title>
+</head>
+<body>
+    <button type="submit" onclick="add()" class="main-btn">Add</button>
+    <div id="mydiv"></div>
+    <script>
+        function add(){
+        const form = document.createElement('form');
+        form.setAttribute("id","myForm");
+        document.body.appendChild(form);
+
+        const input_field_1=document.createElement('input');
+        input_field_1.type = 'text';
+        input_field_1.name ='input-field-1'
+
+        const input_field_2=document.createElement('input');
+        input_field_2.type = 'text';
+        input_field_1.className = "input"
+        input_field_2.name ='input-field-2'
+
+        const input_field_3=document.createElement('input');
+        input_field_3.type = 'text';
+        input_field_1.className = "input"
+        input_field_3.name ='input-field-3'
+
+        const deleteButton = document.createElement('button');
+        deleteButton.innerHTML = 'Delete';
+        deleteButton.addEventListener('click', function() 
+        {
+        input_field_1.remove();
+        input_field_2.remove();
+        input_field_3.remove();
+        deleteButton.remove(); 
+        });
+        document.getElementById("myForm").appendChild(input_field_1);
+        document.getElementById("myForm").appendChild(input_field_2);
+        document.getElementById("myForm").appendChild(input_field_3);
+        document.getElementById("myForm").appendChild(deleteButton);
+        }
+    </script>
+</body>
+</html>
