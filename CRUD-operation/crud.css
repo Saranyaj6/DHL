@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    margin:0;
+    
+}
+#fname,#lname,#phoneno,#email{
+    display: flex;
+    margin: 3px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#submit{
+    margin-right: 5px;
+}
+hr{
+    padding:2px;
+    background-color: rgb(16, 19, 18);
+    width: 80%;
+}
+#msg{
+    text-align: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.myTable {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+.myTable th, .myTable td {
+    border: 1px solid black;
+    padding: 8px;
+}

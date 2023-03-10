@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>cookies</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRUD Operation</title>
+        <script src="javascript/app.js"></script>
+    </head>
+    <body>
+            <form>
+                <input type="text" placeholder="First Name" id="fname">
+                <input type="text" placeholder="Last Name" id="lname">
+                <input type="number" placeholder="Phone NO" id="phone">
+                <input type="email" placeholder="E-mail" id="email">
+                <div class="sub">
+                    <input type="button" value="Submit" id="submit" onclick="save()">
+                    <input type="reset" value="Reset" id="reset">
+                </div>
+                <hr>
+            </form>
+            
+        <div id="msg"></div>
+            <table id="tab" class="myTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            
+    </body>
+    </html>
+<script src="crud.js"></script>
+</body>
+</html>
